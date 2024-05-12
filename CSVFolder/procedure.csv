@@ -1,0 +1,61 @@
+Procedure_ID,Status,Code,codeDescription,Location
+74c3f423-aeb3-47ac-5a46-483a27cdceb4,completed,710824005,Assessment of health and social care needs (procedure),MASS LUNG AND ALLERGY PC
+3bfa13aa-6163-2e2c-e111-cdab56e94e8f,completed,710841007,Assessment of anxiety (procedure),MASS LUNG AND ALLERGY PC
+6887b94b-d9b8-d885-88ca-a4b909127335,completed,428211000124100,Assessment of substance use (procedure),MASS LUNG AND ALLERGY PC
+58bcfafe-a0f0-a33a-1890-e064d16dd5a6,completed,713106006,Screening for drug abuse (procedure),MASS LUNG AND ALLERGY PC
+dd4a4d8d-2b16-8d3a-64c9-d0a892bd911c,completed,710824005,Assessment of health and social care needs (procedure),MASS LUNG AND ALLERGY PC
+4e38f738-53c0-dff9-e143-404cd31a155c,completed,430193006,Medication Reconciliation (procedure),MASS LUNG AND ALLERGY PC
+9152b575-995d-bd9c-51b4-8c7158a2d10e,completed,710841007,Assessment of anxiety (procedure),MASS LUNG AND ALLERGY PC
+b3dc640f-8bbf-e2bd-9625-3bd89d129f9f,completed,866148006,Screening for domestic abuse (procedure),MASS LUNG AND ALLERGY PC
+ea4f6536-4d87-096b-b01f-fe208376f07a,completed,171207006,Depression screening (procedure),MASS LUNG AND ALLERGY PC
+5a0158b5-1b11-a251-4924-d811e0101ed0,completed,454711000124102,Depression screening using Patient Health Questionnaire Two-Item score (procedure),MASS LUNG AND ALLERGY PC
+63339267-826e-7c17-a921-4135f079019b,completed,428211000124100,Assessment of substance use (procedure),MASS LUNG AND ALLERGY PC
+90ff03ef-08b6-fd08-88d4-06aca168f7df,completed,763302001,Assessment using Alcohol Use Disorders Identification Test - Consumption (procedure),MASS LUNG AND ALLERGY PC
+4a23b00c-6854-5c7d-8841-2ea2bb4139dc,completed,710824005,Assessment of health and social care needs (procedure),MASS LUNG AND ALLERGY PC
+35f146d7-97fd-62da-80aa-cfa1794a1fd2,completed,710841007,Assessment of anxiety (procedure),MASS LUNG AND ALLERGY PC
+fb56b337-aa57-2a57-8d64-04462b22559f,completed,171207006,Depression screening (procedure),MASS LUNG AND ALLERGY PC
+bc04322d-d003-b7a5-30f3-75865fe22b85,completed,454711000124102,Depression screening using Patient Health Questionnaire Two-Item score (procedure),MASS LUNG AND ALLERGY PC
+aed60902-fc4f-ff96-b779-d0674df7c651,completed,428211000124100,Assessment of substance use (procedure),MASS LUNG AND ALLERGY PC
+37f4fe32-70a2-9f04-4c3c-ea1b9c3f73e0,completed,713106006,Screening for drug abuse (procedure),MASS LUNG AND ALLERGY PC
+8667f9c4-0f24-f37a-9881-580a0e592634,completed,710824005,Assessment of health and social care needs (procedure),MASS LUNG AND ALLERGY PC
+7a007d04-3268-84fd-ec9d-5a9ba452d782,completed,73761001,Colonoscopy,HARRINGTON MEMORIAL HOSPITAL-1
+a6b55ce3-ac2d-e5e0-6779-7ed6cd89d307,completed,710841007,Assessment of anxiety (procedure),HARRINGTON MEMORIAL HOSPITAL-1
+684bba28-a24f-dead-a155-36beaceb21bf,completed,171207006,Depression screening (procedure),HARRINGTON MEMORIAL HOSPITAL-1
+582669c7-a016-921f-51a6-f188c89dca06,completed,454711000124102,Depression screening using Patient Health Questionnaire Two-Item score (procedure),HARRINGTON MEMORIAL HOSPITAL-1
+81f8961a-12b4-a9b4-0466-049f9715ae62,completed,428211000124100,Assessment of substance use (procedure),HARRINGTON MEMORIAL HOSPITAL-1
+e849e9ce-a514-d78d-496d-d1b532f0bc0b,completed,763302001,Assessment using Alcohol Use Disorders Identification Test - Consumption (procedure),HARRINGTON MEMORIAL HOSPITAL-1
+dd92a2e1-13cc-c19e-8fd6-282fbd6e0baf,completed,710824005,Assessment of health and social care needs (procedure),MASS LUNG AND ALLERGY PC
+391d087b-76a1-634d-84bb-b9d370301555,completed,430193006,Medication Reconciliation (procedure),MASS LUNG AND ALLERGY PC
+10077826-a463-b42e-0c74-dac4c5274284,completed,710841007,Assessment of anxiety (procedure),MASS LUNG AND ALLERGY PC
+cae63191-71c9-0415-f13f-dd794e7d1572,completed,866148006,Screening for domestic abuse (procedure),MASS LUNG AND ALLERGY PC
+5d6116eb-ed17-59ea-d87a-065e2f3506f5,completed,171207006,Depression screening (procedure),MASS LUNG AND ALLERGY PC
+cebd0625-3ab5-26d3-a3f1-2a2eac9c6848,completed,454711000124102,Depression screening using Patient Health Questionnaire Two-Item score (procedure),MASS LUNG AND ALLERGY PC
+c405115c-145e-8792-7480-5d8945301d0e,completed,428211000124100,Assessment of substance use (procedure),MASS LUNG AND ALLERGY PC
+98aa4a8e-b822-b82b-f50f-89bd4a957196,completed,763302001,Assessment using Alcohol Use Disorders Identification Test - Consumption (procedure),MASS LUNG AND ALLERGY PC
+25fd7c69-f5be-6308-5e38-e7a1615bb103,completed,710824005,Assessment of health and social care needs (procedure),MASS LUNG AND ALLERGY PC
+21679f62-5be9-e098-e840-824efcea9f2b,completed,710841007,Assessment of anxiety (procedure),MASS LUNG AND ALLERGY PC
+6e1957da-4c82-6cc7-4651-2620fd16229a,completed,171207006,Depression screening (procedure),MASS LUNG AND ALLERGY PC
+56b3b992-2c24-0f25-6be4-eef604c66205,completed,454711000124102,Depression screening using Patient Health Questionnaire Two-Item score (procedure),MASS LUNG AND ALLERGY PC
+f84df788-7b5c-8b1c-6e95-d29d3f6ef2a8,completed,29303009,Electrocardiographic procedure,HARRINGTON MEMORIAL HOSPITAL-1
+7a92be63-3fd3-1b1f-a88f-7384c46cb34c,completed,762998009,Assessment using New York Heart Association Classification (procedure),HARRINGTON MEMORIAL HOSPITAL-1
+99320316-64c2-bb8e-edf0-12f8614fa9c5,completed,40701008,Echocardiography (procedure),HARRINGTON MEMORIAL HOSPITAL-1
+00075aca-2cb2-5f68-d4fc-146a90ece5ab,completed,430193006,Medication Reconciliation (procedure),HARRINGTON MEMORIAL HOSPITAL-1
+13b8eedd-a273-be0d-d9ab-cd996a2d6beb,completed,710824005,Assessment of health and social care needs (procedure),MASS LUNG AND ALLERGY PC
+6dc52124-bf93-5320-308f-0e092695c728,completed,428211000124100,Assessment of substance use (procedure),MASS LUNG AND ALLERGY PC
+0dcef31b-f8c1-4e75-c3e7-e3307b967ba6,completed,763302001,Assessment using Alcohol Use Disorders Identification Test - Consumption (procedure),MASS LUNG AND ALLERGY PC
+ad8a805c-09ea-c7c4-0368-821995144679,completed,371908008,Oxygen administration by mask (procedure),HARRINGTON MEMORIAL HOSPITAL-1
+fbe05d5f-04fb-ebe0-608d-cd9f39d1253e,completed,431182000,Placing subject in prone position (procedure),HARRINGTON MEMORIAL HOSPITAL-1
+503b7b1d-b538-f328-9ee6-b7861e404972,completed,399208008,Plain chest X-ray (procedure),HARRINGTON MEMORIAL HOSPITAL-1
+69c59b53-4f25-41ab-619b-e2a0dbbf6e3e,completed,430193006,Medication Reconciliation (procedure),HARRINGTON MEMORIAL HOSPITAL-1
+065bc027-f34d-c49c-a24d-edfdf1adc698,completed,29303009,Electrocardiographic procedure,HARRINGTON MEMORIAL HOSPITAL-1
+a9b2d00f-729b-6f57-13cd-4e90d3752514,completed,371908008,Oxygen administration by mask (procedure),HARRINGTON MEMORIAL HOSPITAL-1
+2a8aee7a-fe47-9104-eaf6-8c0992b424c9,completed,431182000,Placing subject in prone position (procedure),HARRINGTON MEMORIAL HOSPITAL-1
+9bfc0e9a-7fb0-2709-19ff-b26181bb1d32,completed,423475008,Heart failure education (procedure),HARRINGTON MEMORIAL HOSPITAL-1
+d1d428f0-3722-f97e-de21-bf444ef00c5a,completed,371908008,Oxygen administration by mask (procedure),HARRINGTON MEMORIAL HOSPITAL-1
+53850a6c-e16f-410c-e1a1-d42c421dca68,completed,431182000,Placing subject in prone position (procedure),HARRINGTON MEMORIAL HOSPITAL-1
+23429a45-3225-4ae3-5505-3864f30aec71,completed,399208008,Plain chest X-ray (procedure),HARRINGTON MEMORIAL HOSPITAL-1
+00b56dc5-c06e-0c29-6e8e-98cdce7549d2,completed,430193006,Medication Reconciliation (procedure),HARRINGTON MEMORIAL HOSPITAL-1
+1e0283be-5b53-7352-17ef-9e3d0b17c65e,completed,29303009,Electrocardiographic procedure,HARRINGTON MEMORIAL HOSPITAL-1
+222854fb-ea52-0c01-b7f7-e31eedba1b6b,completed,371908008,Oxygen administration by mask (procedure),HARRINGTON MEMORIAL HOSPITAL-1
+c93627f9-2efc-92f4-e40f-959cf848b530,completed,431182000,Placing subject in prone position (procedure),HARRINGTON MEMORIAL HOSPITAL-1
+e283f41f-45df-0e4b-8410-ce7d8224c60c,completed,423475008,Heart failure education (procedure),HARRINGTON MEMORIAL HOSPITAL-1
