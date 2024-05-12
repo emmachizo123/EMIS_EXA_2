@@ -90,20 +90,16 @@ def write_to_csv(*args, file_path : str = '.' )-> None:
 
     """
 
-    # Get the current working directory
-    current_directory = os.getcwd()
-
     #Define the folder name for the csv files
     folder_name ='CSVFolder'
 
-    #Create the folder if it doesn't exist
-    folder_path = os.path.join(current_directory,folder_name)
+    # define the data input directory
+    datainputdirectory = "..\\data\\output"
+    folder_path = os.path.join(datainputdirectory, folder_name)
+
+    #create folder if it doesnt exist
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
-
-
-    #for file_name, df in args:
-        #df.to_csv(f'{file_path}/{file_name}.csv', index=False)
 
     for file_name, df in args:
         df.to_csv(f'{folder_path}/{file_name}.csv', index=False)
