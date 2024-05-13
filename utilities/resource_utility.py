@@ -9,6 +9,9 @@ from fhir.resources.procedure import Procedure
 from fhir.resources import FHIRAbstractModel
 from typing import List, Type
 
+from dotenv import load_dotenv
+import os
+
 
 def create_resource_list(list_of_resource: List, resource_dict: dict) -> None:
     """
@@ -90,13 +93,11 @@ def write_to_csv(*args, file_path : str = '.' )-> None:
 
     """
 
-    #Define the folder name for the csv files
-    folder_name ='CSVFolder'
-
-    # define the data input directory
-    datainputdirectory = "..\\data\\output"
-    folder_path = os.path.join(datainputdirectory, folder_name)
-
+    # load environment variables from .env file
+    load_dotenv()
+    data_input_directory_path = os.getenv("DATAINPUT_DIRECTORY")
+    CSV_folder_name= os.getenv("CSV_FOLDER_NAME")
+    folder_path = os.path.join(data_input_directory_path, CSV_folder_name)
     #create folder if it doesnt exist
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)

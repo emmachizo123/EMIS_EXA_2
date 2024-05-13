@@ -4,6 +4,9 @@ import pathlib
 from utilities.resource_utility import create_resource_list, write_to_csv
 from dataframe_converters import *
 
+from dotenv import load_dotenv
+import os
+
 def main( )-> None:
     """
     Function processes resource type medical information stored
@@ -16,10 +19,14 @@ def main( )-> None:
 
     """
 
+    # load environment variables from .env file
+    load_dotenv()
 
-    file_path = "..\\data\\input\\rhir.json"
+    # access the environment variables for the fhir data file
 
-    with open(file_path, 'r') as file:
+    fhir_file_path = os.getenv('FHIR_FILE_PATH')
+
+    with open(fhir_file_path, 'r') as file:
         fhir_data = json.load(file)
 
     resType = []
