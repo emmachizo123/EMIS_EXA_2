@@ -1,5 +1,12 @@
 
 import json
+import sys
+sys.path.append('..')
+import json
+import sys
+from pathlib import Path
+
+
 import pathlib
 from utilities.resource_utility import create_resource_list, write_to_csv
 from dataframe_converters import *
