@@ -156,10 +156,10 @@ I didn’t write exhaustive test script like I would normally do.
 This will be one area to make improvements
 
 4. 	Containerization with Docker
-I ran into some WSL(windows subsystem for Linux) issues that crashed my Docker Desktop and 
-there for  made it impossible to containerize the application. 
+I ran into some WSL(windows subsystem for Linux) issues that currupted my Docker Desktop installation
+and there for  made it impossible to containerize the application. 
 This would be a very important addition that I will make on the application 
-if I had more time
+if I had more time.
  
  
  
