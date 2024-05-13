@@ -7,15 +7,22 @@ Application Name :
 EXA_FHIR App
 
 Brief Summary
-FHIR ( Fast Healthcare Interoperability Resources) is the standard for exchanging healthcare information and even though the  goal of FHIR is to facilitate interoperability between different healthcare systems and applications by providing a standardized way to exchange healthcare data, Our analytics teams find this format difficult to work with when creating dashboards and visualizations.
-The EXA_FHIR transformation pipeline application is therefore  a scalable ETL  data pipeline that consumes FHIR messages and transforms them into a tabular format for easier and further data analysis and  business intelligence.
-In summary , the  application extracts fhir data , transforms it into a tabular format(in this version CSV format)  and loads it into a designation .
+FHIR ( Fast Healthcare Interoperability Resources) is the standard for exchanging 
+healthcare information and even though the  goal of FHIR is to facilitate interoperability
+between different healthcare systems and applications by providing a standardized way 
+to exchange healthcare data, Our analytics teams find this format difficult to work
+with when creating dashboards and visualizations.
+The EXA_FHIR transformation pipeline application is therefore  a scalable ETL  
+data pipeline that consumes FHIR messages and transforms them into a 
+tabular format for easier and further data analysis and  business intelligence.
+In summary , the  application extracts fhir data , transforms it into a tabular 
+format(in this version CSV format)  and loads it into a designation .
  
  
 Table of Contents
  
 1.  Work  flow
-2.   Features
+2. Features
 3.  Description of Modules
 4.  Installation
 5.  Usage
@@ -26,6 +33,9 @@ Table of Contents
 Workflow
 
 FHIR DATA------->EXTRACT-------->TRANSFORM--------->LOAD
+The EXA_FHIR sofware reads FHIR( Fast Healthcare Interoperability Resources) data and transforms it
+into CVS format. A successful thorouput will result to the cleansing and the outputing of fhir data
+as CSV files in /data/output/CSVFolder
 
 1. Features
 - Feature 1: Extraction (Reading FHIR data )
@@ -39,12 +49,17 @@ Using other  more rigorous processes , the fhir data is transformed into a panda
 
 - The Transformation Modules
 resource_utility.py: The main data transformation module.
-create_resource_list: This function takes entry from a bundle , initializes the data to the right resource and groups the different resource data into the resource dictionary .Mutates the resource_dict in place
+create_resource_list: This function takes entry from a bundle , initializes the data to the 
+right resource and groups the different resource data into the resource dictionary .
+Mutates the resource_dict in place
 _filter_field: function filters off attributes that do not belong to the resource type , and stores the right attributes and its values in the dictionary — field_dict
 write_to_csv:  The function writes a  pandas DataFrame to a csv file
  
 - Feature 3: Loading the dataframe to CSV
-The loading module takes the pandas dataframe representing each FHIR Resource and writes them to a file as CSV.
+The loading module takes the pandas dataframe representing each 
+FHIR Resource and writes them to a file as CSV.
+
+
 The Loading Modules
 main.py
  
@@ -57,7 +72,7 @@ resourcetypes.py
 
 2. Description of Modules
 
-Main.py:
+main.py:
 --Entry point into the application
 --Calls the utility classes
 
@@ -92,7 +107,7 @@ the following steps:
 1. 	git clone https://github.com/emmachizo123/EMIS_EXA_2
 2. 	cd EMIS_EXA_2
 3. 	pip install -r requirements.txt
-4. 	 create .env file if it did come with the cloned repository.
+4. 	 create .env file if it did not come with the cloned repository.
 The project requires a .env file.
 Because the .env file for this project doesn’t have any sensitive information, 
 I have gone against the rules by adding it to the repository (often seen as a bad idea) 
@@ -126,14 +141,15 @@ python run_tests.py
 Next Steps
 Because of the limited time there are several ideas that I didn’t explore and implement.
 1. 	OOP design  and development
-I would  love to have built this application using a full-on OOP design  development. 
-It would have brought the benefits of OOP such a reusability , flexibility , portability , 
-security etc .
+I would  love to have built this application using a full-on OOP design and development. 
+It would have brought the beauty and benefits of OOP such a reusability , 
+flexibility , portability , security etc .
  
 2. 	More Data Exploration
-Even though there are about 17 Resource Types , I was only able to explore just 
-six (Patient, Condition, Observation , DiagnosticReport, Claim, Procedure ).
-Giving more time I would explore the other resource types
+Even though there are about 17 Resource Types in the data file we I used for development,
+I was only able to explore just six types (Patient, Condition, Observation , DiagnosticReport,
+Claim, Procedure ).
+Giving more time I would explore the other resource types.
  
 3. 	 Robust Testing
 I didn’t write exhaustive test script like I would normally do. 
