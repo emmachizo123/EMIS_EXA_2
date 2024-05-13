@@ -1,5 +1,3 @@
-import os
-
 from fhir.resources.claim import Claim
 from fhir.resources.condition import Condition
 from fhir.resources.diagnosticreport import DiagnosticReport
@@ -7,6 +5,7 @@ from fhir.resources.observation import Observation
 from fhir.resources.patient import Patient
 from fhir.resources.procedure import Procedure
 from fhir.resources import FHIRAbstractModel
+from pathlib import Path
 from typing import List, Type
 
 from dotenv import load_dotenv
@@ -53,6 +52,7 @@ def create_resource_list(list_of_resource: List, resource_dict: dict) -> None:
             _filter_field(Claim, res['resource'], field_dict)
             resource_dict['Claim'].append(Claim(**field_dict))
 
+
 def _filter_field(model: FHIRAbstractModel, entry: dict, field_dict: dict) -> None:
     """
     Filters off attributes that do not belong to the resource type, and stores
@@ -76,7 +76,8 @@ def _filter_field(model: FHIRAbstractModel, entry: dict, field_dict: dict) -> No
         if key in model.elements_sequence():
             field_dict[key] = entry[key]
 
-def write_to_csv(*args, file_path : str = '.' )-> None:
+
+def write_to_csv(*args, file_path: str = '.') -> None:
     """
 
 
@@ -92,15 +93,16 @@ def write_to_csv(*args, file_path : str = '.' )-> None:
     None
 
     """
-
     # load environment variables from .env file
     load_dotenv()
-    data_input_directory_path = os.getenv("DATAINPUT_DIRECTORY")
-    CSV_folder_name= os.getenv("CSV_FOLDER_NAME")
-    folder_path = os.path.join(data_input_directory_path, CSV_folder_name)
-    #create folder if it doesnt exist
+    data_output_directory_path = os.getenv("DATAOUTPUT_DIRECTORY")
+    CSV_folder_name = os.getenv("CSV_FOLDER_NAME")
+    folder_path = os.path.join(data_output_directory_path, CSV_folder_name)
+    # create folder if it doesnt exist
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
 
     for file_name, df in args:
         df.to_csv(f'{folder_path}/{file_name}.csv', index=False)
+
+

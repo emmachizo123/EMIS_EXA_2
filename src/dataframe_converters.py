@@ -1,28 +1,26 @@
-
-'''
-This file contains functions to convert several fhir Resources to corresponding Dataframe.
-I intend to write each dataframe to a correspnding CSV file there by meeting the tabular format requirment
-
-'''
 import pandas as pd
+from typing import List
 
-def fhir_patient_to_dataframe(fhir_patients):
+def fhir_patient_to_dataframe(fhir_patients: List) -> pd.DataFrame:
     """
-        Function takes a list of Patient resource data and processes it into
-        a dataframe
+    Function takes a list of Patient resource data and processes it into
+    a dataframe
 
-        Parameters
-        ----------
-        fhir_patients : List
-            List of Patient resource data.
+    Parameters
+    ----------
+    fhir_patients : List
+        List of Patient resource data.
 
-        Returns
-        -------
-        df : pd.DataFrame
-            Returns patient data in a dataframe.
+    Returns
+    -------
+    df : pd.DataFrame
+        Returns patient data in a dataframe.
 
     """
     # Extract relevant fields from FHIR Patient resources
+    if fhir_patients == []:
+        raise ValueError("List must be non-empty")
+
     data = []
     for patient in fhir_patients:
         patient_id = patient.id
@@ -40,23 +38,26 @@ def fhir_patient_to_dataframe(fhir_patients):
     df = pd.DataFrame(data)
     return df
 
-def fhir_condition_to_dataframe(fhir_conditions):
+def fhir_condition_to_dataframe(fhir_conditions: List) -> pd.DataFrame:
     """
-        Function takes a list of Condition resource data and processes it into
-        a dataframe
+    Function takes a list of Condition resource data and processes it into
+    a dataframe
 
-        Parameters
-        ----------
-        fhir_conditions : List
-            List of Condition resource data.
+    Parameters
+    ----------
+    fhir_conditions : List
+        List of Condition resource data.
 
-        Returns
-        -------
-        df : pd.DataFrame
-            Returns condition data in a dataframe.
+    Returns
+    -------
+    df : pd.DataFrame
+        Returns condition data in a dataframe.
 
-        """
+    """
     # Extract relevant fields from FHIR Patient resources
+    if fhir_conditions == []:
+        raise ValueError("List must be non-empty")
+
     data = []
     for condition in fhir_conditions:
         ConditionID     = condition.id
@@ -76,21 +77,24 @@ def fhir_condition_to_dataframe(fhir_conditions):
 
 def fhir_diagnosticReport_to_dataframe(fhir_diagnosticReports):
     """
-            Function takes a list of DiagnosticReports resource data and processes it into
-            a dataframe
+    Function takes a list of DiagnosticReport resource data and processes it into
+    a dataframe
 
-            Parameters
-            ----------
-            fhir_diagnosticReports : List
-                List of DiagnosticReports resource data.
+    Parameters
+    ----------
+    fhir_diagnosticReports : List
+        List of DiagnosticReport resource data.
 
-            Returns
-            -------
-            df : pd.DataFrame
-                Returns DiagnosticReports data in a dataframe.
+    Returns
+    -------
+    df : pd.DataFrame
+        Returns diagnosticReport data in a dataframe.
 
-            """
+    """
     # Extract relevant fields from FHIR Patient resources
+    if fhir_diagnosticReports == []:
+        raise ValueError("List must be non-empty")
+
     data = []
     for diagnosticReport in fhir_diagnosticReports:
         DiagnosticReport_ID  = diagnosticReport.id
@@ -114,21 +118,24 @@ def fhir_diagnosticReport_to_dataframe(fhir_diagnosticReports):
 
 def fhir_observation_to_dataframe(fhir_observations):
     """
-            Function takes a list of Observations resource data and processes it into
-            a dataframe
+    Function takes a list of Observation resource data and processes it into
+    a dataframe
 
-            Parameters
-            ----------
-            fhir_observations : List
-                List of Observation resource data.
+    Parameters
+    ----------
+    fhir_observations : List
+        List of Observation resource data.
 
-            Returns
-            -------
-            df : pd.DataFrame
-                Returns Observation data in a dataframe.
+    Returns
+    -------
+    df : pd.DataFrame
+        Returns observation data in a dataframe.
 
     """
     # Extract relevant fields from FHIR Patient resources
+    if fhir_observations == []:
+        raise ValueError("List must be non-empty")
+
     data = []
     for observation in fhir_observations:
         Observation_ID  = observation.id
@@ -148,24 +155,26 @@ def fhir_observation_to_dataframe(fhir_observations):
     df = pd.DataFrame(data)
     return df
 
-def fhir_procedure_to_dataframe(fhir_procedures):
+def fhir_procedure_to_dataframe(fhir_procedures: List) -> pd.DataFrame:
     """
-           Function takes a list of Procedures resource data and processes it into
-           a dataframe
+    Function takes a list of Procedure resource data and processes it into
+    a dataframe
 
-           Parameters
-           ----------
-           fhir_procedures : List
-               List of Procedure resource data.
+    Parameters
+    ----------
+    fhir_procedures : List
+        List of Procedure resource data.
 
-           Returns
-           -------
-           df : pd.DataFrame
-               Returns procedure data in a dataframe.
+    Returns
+    -------
+    df : pd.DataFrame
+        Returns Procedure data in a dataframe.
 
-   """
-
+    """
     # Extract relevant fields from FHIR Patient resources
+    if fhir_procedures == []:
+        raise ValueError("List must be non-empty")
+
     data = []
     for procedure in fhir_procedures:
         Procedure_ID    = procedure.id
@@ -183,23 +192,26 @@ def fhir_procedure_to_dataframe(fhir_procedures):
     df = pd.DataFrame(data)
     return df
 
-def fhir_claim_to_dataframe(fhir_claims):
+def fhir_claim_to_dataframe(fhir_claims: List) -> pd.DataFrame:
     """
-               Function takes a list of Claims resource data and processes it into
-               a dataframe
+    Function takes a list of Claims resource data and processes it into
+    a dataframe
 
-               Parameters
-               ----------
-               fhir_procedures : List
-                   List of Claims resource data.
+    Parameters
+    ----------
+    fhir_claims : List
+        List of Claims resource data.
 
-               Returns
-               -------
-               df : pd.DataFrame
-                   Returns Claims data in a dataframe.
+    Returns
+    -------
+    df : pd.DataFrame
+        Returns claims data in a dataframe.
 
     """
     # Extract relevant fields from FHIR Patient resources
+    if fhir_claims == []:
+        raise ValueError("List must be non-empty")
+
     data = []
     for claim in fhir_claims:
         Claim_ID          = claim.id
